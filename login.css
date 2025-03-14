@@ -80,7 +80,7 @@ body {
 .login-form h2 {
     color: #F37767;
     margin-bottom: 20px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin-bottom: 1.5rem;
 }
 
@@ -146,9 +146,10 @@ body {
     text-decoration: none;
 }
 
+
 .forgot-password {
     text-decoration: none;
-    color: #27519C;
+    color: #F37767 !important;
     font-weight: normal;
 }
 
