@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    background-image: url('./assets/left_paper_plane.png'), url('./assets/right_paper_plane.png');
+    background-position: 0% 20%, 100% 80%;
+    background-repeat: no-repeat;
+    background-size:280px, 340px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    border-bottom: 3px dashed #53CCD1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+}
+
+.contact-btn {
+    background-color: #27519C;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #1e4080;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 120px;
+}
+
+.login-form img {
+    width: 280px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.login-form h2 {
+    color: #F37767;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #27519C;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.form-options a {
+    color: #27519C;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #27519C;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #1e4080;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #F37767;
+    font-weight: bold;
+}
+
+.register-link a {
+    color: #27519C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #27519C;
+    font-weight: normal;
+}
+
+footer {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #27519C; 
+    font-size: 14px;
+    border-top: 3px dashed #53CCD1;
+    position: absolute;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    body {
+        background-size: 120px, 120px;
+        background-position: left top, right bottom;
+    }
+    .login-container {
+        width: 95%;
+        padding: 35px;
+    }
+    .login-form img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 100px, 100px;
+        background-position: left top, right bottom;
+    }
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+    .login-form img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: 80px, 80px;
+        background-position: left top, right bottom;
+    }
+    .navbar {
+        padding: 15px;
+    }
+    .contact-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .login-container {
+        width: 100%;
+        padding: 25px;
+    }
+    .login-form img {
+        width: 200px;
+    }
+    .form-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .login-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
